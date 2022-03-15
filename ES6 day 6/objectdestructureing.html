@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Object destructring</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const bioData = {
+            name: "Paaru",
+            age: 30,
+            deg: 'MCS'
+        }
+        // OBJECT DESTRUCTURING 
+        let { name, age, deg } = bioData;
+        console.log(`my name is ${name}.my age is ${age} and my highest degree is ${deg}`);
+        // user object destructuring
+        const user = {
+            street: "bag Bazar",
+            country: "nepal",
+            post: 4456,
+            firstName: "Paaru",
+            lastNamel: "Rawal",
+            gender: "female",
+
+        }
+        let { street, country, post, firstName, lastNamel } = user;
+        const type = gender === "male" ? "mr" : "mrs";
+        // return `${type} {firstName} ${lastNamel}`;
+        console.log(`the name is ${firstName}and lastname is ${lastNamel}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>constant fat arrow function </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        // fatarrow function
+        let a = 6;
+        let b = 7;
+        const sum = () => {
+            return a + b;
+        }
+        console.log(sum(a, b));
+        // or 
+        const sum1 = (a, b) => {
+            return a + b;
+        }
+        console.log(sum1(4, 5));
+
+        // or
+        let a1 = 9
+        const sum2 = (b1) => {
+            return a1 + b1;
+        }
+        console.log(sum2(8));
+    </script>
+</body>
+
+</html>

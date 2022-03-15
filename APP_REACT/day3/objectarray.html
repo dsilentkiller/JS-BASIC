@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Day 3 JAVASCRIPT OBJECT</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // object array is declared.
+
+        const Cars = [{
+            model: '300',
+            size: 'small',
+            name: 'volvo',
+            engine: 'best'
+
+        }, {
+            model: '400',
+            size: 'large',
+            name: 'tesla',
+            engine: 'best',
+        }, {
+            model: '500',
+            size: 'middle',
+            name: 'toyata',
+            engine: 'best'
+        }]
+        Cars.foreach(car => {
+            for (let key in car) {
+                console.log(`${key}):${car[key]}`);
+            }
+        })
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title>Ternary Operator example </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 1.choose the ternary operator to alert "Too Young" if age is less than 18,otherwse alert "old enough"
+        // let age = n;
+        let age = parseInt(prompt('enter the age:'))
+        // age = typeof (n);
+        // console.log(r);
+        // alert(n);
+        let votable = (age < 18) ? "Too Young" : "Old Enough";
+        alert(votable);
+        // es6 
+        const x = (x, y) => {
+            return (x * y);
+        }
+        console.log(2, 5);
+        // javascript maps
+        // CREATE OBJECTS 
+        const banana = {
+            name: 'banana',
+            type: 'large'
+        }
+        const apple = {
+            name: 'apple',
+            color: 'red',
+        }
+        // create new object map set.
+        const fruits = new Map();
+        // add the element to the map
+        apple1 = fruits.set(apple, 500);
+        console.log('the new set of apple is', apple1);
+        banana1 = fruits.set(banana, 400);
+        console.log('the new set of banana is', banana1);
+        // map array 
+        const fruit = new Map([
+            ["apple", 200],
+            ["banana", 300],
+            ["orange", 30],
+            ["hop", 67],
+
+        ])
+        console.log(fruit);
+
+        // if else ko thauma ternary operator use garnasakincha.
+        let age1 = 18;
+        let message;
+        age >= 16 ? (message = 'You can drive') : (message = 'You cannot drive');
+        console.log(message);
+
+        // authenticated in ternary operator.
+
+
+        let authenticated = true;
+        let nextUrl = authenticated ? (alert('you are redirected to admin page'), './admin') : (alert('your access denied!'), '/403');
+        console.log('the updated authenticated ', nextUrl);
+
+        let a = 7;
+        let b = 7;
+        let add;
+        let numaction = (a + b) ? true : false;
+        console.log('the sum is', numaction)
+        // locked
+        let locked = 1;
+        let canChange = !locked == 1 ? true : false;
+        console.log('ternary operator value', canChange);
+        // checking speen in 
+        let speed = 120;
+        let vehiclespeed = speed >= 120 ? 'too fast' : speed >= 80 ? 'fast' : okay;
+        console.log('vehiclespeed', vehiclespeed);
+        // mark check 
+        let mark = 80;
+        let markobtained = mark >= 60 ? 'distiction' : mark >= 50 ? 'second division' : mark >= 40 ? 'third ramk' : failed;
+        console.log('my obtained mark is', markobtained)
+        // relation
+        let oddeven;
+        let num = 9;
+        let OddEven = (num % 2 == 1) ? alert('this is odd number') : alert('this is even number');
+        console.log('This is odd number', oddeven);
+        let isMember = 'ram'
+        let member = isMember ? '$2.00' : '$10.00';
+        console.log('the member charge is', member);
+
+        // age
+        let agee = 34;
+        let mymember = agee >= 20 ? 'you are able to vote' : 'you cannot vote';
+        console.log('the member agee for vote', mymember);
+
+        // destructing array and object : destructur le array elements lai individual variablle banaucha.
+
+        getScores = () => {
+            return [30, 35, 89];
+
+        }
+        // fir indivial elements in old ways 
+        // u =getScores();
+        // fir indivial elements in old ways 
+        // let x1 = u[0];
+        // y1=u[1];
+        // z1=u[2]
+        // new waysEs6 
+        let [x1, y1, z1] = getScores();
+        console.log('AFter destructuring', x1);
+        console.log('AFter destructuring', y1);
+        console.log('AFter destructuring', z1);
+
+
+
+    </script>
+</body>
+
+</html>

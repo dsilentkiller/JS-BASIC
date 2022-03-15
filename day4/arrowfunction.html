@@ -1,0 +1,113 @@
+<head>
+    <title>
+        SWITCH case example all
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // example 1:using arrow function, i m totally freez here.
+        let x1 = (x, y) => { x * y };
+        let age = 5;
+        let welcome = (age < 18) ? () => console.log('baby') : () => console.log('adult');
+        welcome();
+
+
+    </script>
+    <!-- example 2:  multiple arrow function-->
+    <script type="text/javascript">
+        let sum = (a, b) => {
+            let result = a + b;
+            return result;
+        }
+        let result1 = sum(4, 5);
+        console.log(result1);
+
+    </script>
+    <!-- example 3: this with regular function   -->
+    <script type="text/javascript">
+        function Person() {
+            this.name = 'jack',
+                this.age = 25,
+                this.sayName = function () {
+                    // this ia accessible
+                    console.log(this.age);
+
+                    function innerFunc() {
+                        // this refer global object
+                        console.log(this.age);
+                        console.log(this);
+                    }
+                    innerFunc();
+                }
+        }
+        let x = new Person();
+        x.sayName();
+
+    </script>
+    <!-- arrow function -->
+    <script type="text/javascript">
+        // example 1:using arrow function, i m totally freez here.
+
+        function Person1() {
+            this.name = 'jack',
+                this.age = 25,
+                this.sayName = function () {
+                    console.log(this.age);
+                    let innerFunc = () => {
+                        console.log(this.age);
+                    }
+                    innerFunc();
+                }
+        }
+        const x2 = new Person1();
+        x2.sayName();
+
+    </script>
+    <script type="text/javascript">
+        //   tag function
+        const name = 'jack';
+        const greet = true;
+        function tagExample(strings, nameValue) {
+            let str0 = strings[0];
+            let str1 = strings[1];
+
+            if (greet) {
+                return `${str0}${nameValue}${str1}`;
+            }
+            const result = tagExample`Hello ${name},how r you?`;
+            console.log(result);
+        }
+    </script>
+    <script type="text/javascript">
+        let map1 = new Map();
+        map1.set('name', 'paaru');
+        map1.set('age', '23');
+        // looping through map
+        map1.forEach(function (value, key) {
+            console.log(key + '-' + value)
+        })
+    </script>
+    <!-- iterate over map key -->
+    <script type="text/javascript">
+        let map2 = new Map();
+        map2.set('name', 'gita');
+        map2.set('age', '23');
+        //    looping through map
+        for (let key of map2.keys()) {
+            console.log(key)
+        }
+        for (let value of map2.values()) {
+            console.log(value)
+
+        }
+        // for key and value
+        for (let elem of map1.entries()) {
+            console.log(`${elem[0]}:${elem[1]}`);
+        }
+
+    </script>
+
+</body>
+
+</html>

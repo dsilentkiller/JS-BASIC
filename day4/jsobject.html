@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <title>
+        javascript Object
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        myObj = {
+            name: "john",
+            age: 30,
+            cars: {
+                car1: "Ford",
+                car2: "BMW",
+                car3: "Flat",
+            }
+        }
+        console.log(myObj['cars']['car1'])
+    </script>
+
+    <!-- nested object properties -->
+    <script type="text/javascript">
+        let x = 0;
+        const myObject = {
+            name: "Paaru",
+            age: "80",
+            country: "nepal",
+            Caars: [
+                { name: "Ford", models: ["ford", "focus", "mustang"] },
+                { name: "BMW", models: ["220", "X2", "X3"] },
+                { name: "flat", models: ["340", "456"] }
+            ]
+        }
+        console.log(myObject["Caars"][2])
+        // useing for loop in each array
+        for (let i in myObject.Caars) {
+            x += "<h1>" + myObject.Caars[i].name + "</h1>";
+            for (let j in myObject.Caars[i].models) {
+                x += myObject.Caars[i].models[j];
+            }
+
+        }
+        console.log(myObject["Caars"][1])
+
+    </script>
+    <!-- js object properties -->
+    <script type="text/javascript">
+        fullName = [];
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + "" + this.lastName;
+            }
+        }
+        console.log(fullName);
+        delete person.age;
+        console.log("after deleting result is", person);
+    </script>
+    <!-- or delete keyword delete both value and properties -->
+    <script type="text/javascript">
+        const pperson = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        }
+        delete pperson['age'];
+        console.log("after deleting result is", pperson);
+        s = pperson.name + "" + pperson.age;
+        console.log(s)
+    </script>
+    <!-- javascript methods -->
+    <!-- <script type="text/javascript">
+        const pperson = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        }
+        delete pperson['age'];
+        console.log("after deleting result is", pperson);
+    </script> -->
+    <!-- the argument of object: find max -->
+    <script type="text/javascript">
+        x = findMax(1, 34, 7, 80, 90, 45, 67);
+        function findMax() {
+            let max = -Infinity;
+            for (let i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+
+        }
+        console.log(x)
+    </script>
+    <!--# quesdtion why output is nan? -->
+    <script type="text/javascript">
+        y = sumAll(2, 45, 34, 89, 56, 4, 9)
+        function sumAll() {
+            let sum = 0;
+            for (let i = 0; i <= arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        console.log(sumAll)
+    </script>
+    <!-- callback function -->
+    <script type="text/javascript">
+        function myDisplayer(some) {
+            document.getElementById("demo").innerHTML = some;
+        }
+        function myCalculator(num1, num2) {
+            let sum = num1 + num2;
+            return sum;
+        }
+        let result = myCalculator(5, 5);
+        c = myDisplayer(result);
+        console.log(c);
+    </script>
+
+    <script type="text/javascript">
+        const people = {
+            fullName: function () {
+                return this.firstName + "" + this.lastName;
+            }
+        }
+        const people1 = {
+            firstName: "John",
+            lastName: "Doe",
+        }
+        const people2 = {
+            firstName: "Paaru",
+            lastName: "Rawal",
+        }
+        z = people.fullName.call(people1);
+        console.log(z)
+    </script>
+    <!-- async function  -->
+    <script type="text/javascript">
+        async function myFunction() {
+            return "hello";
+        }
+
+        myFunction().then(
+            function (value) { myDisplayer(value); },
+            function (error) { myDisplayer(error); }
+        )
+    </script>
+
+</body>
+
+</html>

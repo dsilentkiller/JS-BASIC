@@ -1,0 +1,63 @@
+<head>
+    <title>
+        while loop example all
+    </title>
+</head>
+
+<body>
+    <!-- display number from 1 to n -->
+    <script type="text/javascript">
+        // initilization
+        let i = 1; n = 5;
+
+        while (i <= n) {
+            console.log(i);
+            i += 1;
+        }
+        console.log(i)
+    </script>
+    <!-- example 2:  sum of positive number only-->
+    <script type="text/javascript">
+        let sum = 0;
+
+        // take input from user
+        const num = parseInt(prompt('enter the number:'));
+
+        while (num >= 0) {
+            // add all positive num
+            sum += num;
+            // take input again
+            // num = parseInt(prompt('enter numer:'));
+        }
+        // display the sum 
+        console.log(`the sum is ${sum}`);
+
+
+    </script>
+    <!-- example 3:  do while loop display number 1 to 6-->
+    <!-- <script type="text/javascript">
+        let i1 = 1;
+        const n = 5;
+        // do whilie loop
+        do {
+            console.log(i);
+            i1++;
+        } while (i <= n);
+
+
+    </script> -->
+    <!-- example 4:do -while loop sum of positive number  -->
+    <script type="text/javascript">
+        let sum1 = 0;
+        let number1 = 0;
+        do {
+            sum1 += number1;
+            number1 = parseInt(prompt('enter a number:'));
+        } while (number1 >= 0)
+        console.log(`the sum is ${sum}`);
+
+    </script>
+
+</body>
+
+</html>

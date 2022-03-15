@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>
+        program to check prime number or not
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // take input
+        const a = prompt('enter a first number:');
+        const b = prompt('enter a second number:');
+        const c = prompt('enter a third number');
+        // find the last digit 
+
+        const result1 = a % 10;
+        const result2 = b % 10;
+        const result3 = c % 10;
+        // compare the last digits 
+        if (result1 == result2 && result1 == result3) {
+            console.log(`${a},${b} and ${c} have the same last digit.`);
+        } else {
+            console.log(`${a},${b} and ${c} have different last digit.`);
+
+        }
+
+    </script>
+</body>
+
+</html>

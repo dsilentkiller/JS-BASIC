@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>
+        program to check prime number or not
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const number = parseInt(prompt("Enter a positive number:"));
+        let isPrime = true;
+
+        // check if umber is equal to 1
+        if (number === 1) {
+            console.log("1 is neither prime nor composite number.");
+        }
+        else if (number > 1) {
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                console.log(`${number} is a prime number`);
+            } else {
+                console.log(`${number} is a not prime number`);
+            }
+
+        }
+        else {
+            console.log("The number isnot a prime number");
+        }
+
+
+
+
+    </script>
+    <!-- factor of positive number -->
+    <script type="text/javascript">
+
+        const num = prompt('enter a positive number');
+        console.log(`the factor of ${num}:`)
+        // looping through 1 to n
+        for (let i = 1; i <= num; i++) {
+            if (num % i === 0) {
+                console.log(i);
+            }
+        }
+
+
+    </script>
+    <!-- 3.finonacci series up to n -->
+    <script type="text/javascript">
+        const num1 = prompt("enter a number");
+        let n1 = 0, n2 = 1, nextTerm;
+        console.log(n1);
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+
+
+    </script>
+
+</body>
+
+</html>

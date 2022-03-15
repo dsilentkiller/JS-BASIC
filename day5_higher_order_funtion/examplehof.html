@@ -1,0 +1,127 @@
+<html,>
+
+    <head>
+        <title>Higher order function</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            function getCapture(camera) {
+                // invoked passed function
+                camera();
+
+            }
+            // invoke the function by passing a function as an argument
+            getCapture(function () {
+                console.log('Canon');
+            })
+            // Filter
+            startsWithB = (string) => string.toLowerCase().startsWith('b');
+            // ARRAY INITIALIZATION
+            namesStartingWithB = [];
+            for (let i = 0; i < users.length; i++) {
+                if (startsWithB(users[i].name)) {
+                    namesStartingWithB.push(users[i]);
+                }
+            }
+            console.log(namesStartingWithB);
+
+            namesStartingWithB = user.filter((user) => startsWithB(user.name));
+            console.log(namesStartingWithB);
+            // const arrow function 
+            (a) => a + 100;
+            (a, b) => a + b + 100;
+            // no arguments
+            let a = 4;
+            let b = 2;
+            () => a + b + 100;
+            (a, b) => {
+                let chuck = 23;
+                return a + b + chuck;
+            }
+            // named function and arrow function
+            // traditional function
+            function bob1(a) {
+                return a + 100;
+            }
+            // const arrow function
+            let bob = (a) => a + 100;
+            // destructuring within params supported
+            ([a, b] = [10, 20]) => a + b;
+            ({ a, b } = { a: 10, b: 20 }) => a + b;
+            // arrow function used as methods
+            'use strict';
+            let obj = {
+                i: 10,
+                b: () => console.log(this.i, this),
+                c: function () {
+                    console.log(this.i, this);
+                }
+            }
+            obj.b();
+            obj.c();
+
+            // arrow function with this
+            'use strict';
+            let object = {
+                a1: 10
+
+            };
+            object.defineProperty(object, 'b', {
+                get: () => {
+                    console.log(this.a, typeof this.a, this);
+                    // undefined
+                    return this.a + 10;
+                    // refer global object so this.a defined undefined object
+                }
+            });
+            // higher order function
+            function incrArr(arr, n) {
+                let result = [];
+                // itrate through each elements and add the number
+
+                for (const elem of arr) {
+                    result.push(elem + n);
+                }
+                return result;
+            }
+            console.log(incrArr(data, 2));
+            // decrement array function 
+            function decArr(arr, n) {
+                let result = [];
+
+                for (const elem of arr) {
+                    result.push(elem + n)
+                }
+                return result;
+            }
+            // doing both above in single one
+
+            function doOperations(arr, n, op) {
+                let result = [];
+                for (const elem of arr) {
+                    if (op === 'incr') {
+                        result.push(elem + n);
+                    } else if (op === 'decr') {
+                        result.push(elem - n);
+                    }
+                }
+                return result;
+            }
+
+            function smartOperation(data, Operation, pad) {
+                pad = isNaN(pad) ? 0 : pad;
+                let result = [];
+                for (const elem of data) {
+                    result.push(Operation(elem, pad));
+                }
+                return result;
+
+            }
+            const data = [12, 3, 50];
+            const result = smartOperation(data, incr, 3);
+            console.log(result);
+        </script>
+    </body>
+
+</html,

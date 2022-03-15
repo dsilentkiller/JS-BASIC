@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        program to check prime number or not
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function fibonacci(num) {
+            if (num < 2) {
+                return num;
+            }
+            else {
+                return fibonacci(num - 1) + fibonacci(num - 2);
+            }
+        }
+        // take n th term input from the user
+        const nTerms = prompt('Enter the number of terms:');
+        if (nTerms <= 0) {
+            console.log('enter a positive integer.');
+        } else {
+            for (let i = 0; i < nTerms; i++) {
+                console.log(fibonacci(i));
+            }
+        }
+
+    </script>
+</body>
+
+</html>

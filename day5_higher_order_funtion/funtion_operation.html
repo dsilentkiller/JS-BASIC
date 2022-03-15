@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        sayHi = (name) => `Hi, ${name}!`;
+        result = sayHi('User');
+        console.log(result);
+        // number are data
+        double = (x) => x * 2;
+        result = double(4);
+        console.log(result);
+        // boolean are data
+        getClearance = (allowed) => (allowed ? 'Access Granted' : 'Access denied');
+        result1 = getClearance(true);
+        result2 = getClearance(false);
+        console.log(result1)
+        console.log(result2)
+        // object are data
+        getFirstName = (obj) => obj.firstName;
+        result = getFirstName({
+            firstName: 'Yazed'
+        });
+        console.log(result)
+        // array are data
+        len = (array) => array.length;
+        result = len([1, 2, 4]);
+        console.log(result)
+        // function as arguments
+        // isEven is function in filter function isEven is used as parameter.
+        isEven = (num) => num % 2 === 0;
+        result = [1, 2, 3, 4].filter(isEven);
+        console.log(result);
+        // returning functions
+        add = (x) => (y) => x + y;
+        result = add(10)(20);
+        console.log(result);
+        // map 
+        getName = (user) => user.name;
+        usernames = [];
+
+        for (let i = 0; i < users.lenth; i++) {
+            const name = getName(users[i]);
+            usernames.push(name);
+        }
+        console.log(usernames);
+        // higher order function example: camera is passed as argument in getCapture dunction
+        // define function that takes function as argument.
+        
+    </script>
+
+
+</body>
+
+</html>

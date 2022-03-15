@@ -1,0 +1,457 @@
+<html>
+
+
+
+<head>
+    <title>
+        Planearray
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+        fruits.splice()
+    </script>
+    <!-- STRING METHODS----------------------------------------------------------------------------- -->
+    <script type="text/javascript">
+        let str = "Banana Orange, Apple,Kiwi";
+        let part = str.slice(7, 13);
+        console.log(part);
+    </script>
+    <!-- string  -->
+    <script type="text/javascript">
+        let str1 = "Banana Orange, Apple,Kiwi";
+        part1 = str.slice(7, 13);
+        console.log(part1);
+    </script>
+    <!-- slice  -->
+    <script type="text/javascript">
+        let str12 = "Banana Orange, Apple,Kiwi";
+        part1 = str12.slice(-7, -13);
+        console.log(part1);
+    </script>
+
+    <script type="text/javascript">
+        let str112 = "Banana Orange, Apple,Kiwi";
+        part1 = str112.slice(8);
+        console.log(part1);
+    </script>
+    <!-- counting from end -->
+    <script type="text/javascript">
+        let str1245 = "Banana Orange, Apple,Kiwi";
+        part1 = str1245.slice(-7);
+        console.log(part1);
+    </script>
+    <!-- substring similar to slice but substring canot accept negative indexes -->
+    <script type="text/javascript">
+        let str1342 = "Banana Orange, Apple,Kiwi";
+        part1 = str1342.substring(7, 13);
+        console.log(part1);
+    </script>
+    <!-- Javastring string substr() -->
+    <!-- Substr() is similar to slice() the difference is that the second parameter specifies the length of the extracted part -->
+    <!-- if first parameter is negative, the position counts from the end of the string. -->
+    <script type="text/javascript">
+        let sstr = "Banana Orange, Apple,Kiwi";
+        part1 = sstr.substr(-4);
+        console.log(part1);
+    </script>
+    <!-- negative index in substr ,pachadi bata string lincha. -->
+    <script type="text/javascript">
+        let ss = "Banana Orange, Apple,Kiwi";
+        part1 = ss.substr(-5);
+        console.log(part1);
+    </script>
+
+    <script type="text/javascript">
+        let s = "Banana Orange, Apple,Kiwi";
+        part1 = s.substr(7);
+        console.log(part1);
+    </script>
+    <!-- replacing string content -->
+    <!-- replace (), methods replaces the first match only. -->
+    <script type="text/javascript">
+        let sst = "Banana Orange, Apple,Kiwi";
+        part1 = sst.replace("Apple", "paaru");
+        console.log(part1);
+    </script>
+    <!-- upper case and lower case -->
+    <script type="text/javascript">
+        let ssti = "Banana Orange, Apple,Kiwi";
+        part1 = ssti.toUpperCase();
+        console.log(part1);
+    </script>
+    <!-- lower case  -->
+    <script type="text/javascript">
+        let sstii = "Banana Orange, Apple,Kiwi";
+        part1 = ssti.toLowerCase();
+        console.log(part1);
+    </script>
+    <!-- javascript  string concat -->
+    <script type="text/javascript">
+        let text1 = "Banana Orange, Apple,Kiwi";
+        let text2 = "World";
+        part1 = text1.concat("", text2);
+        console.log(part1);
+    </script>
+    <!-- Javascript String Trim(): trim method removes whitespace from both sides of a string -->
+    <script type="text/javascript">
+        let ti = "Banana Orange, Apple,Kiwi";
+
+        part1 = ti.trim();
+        console.log(part1);
+    </script>
+    <!-- string methods, string search,string templates -->
+
+    <!-- Javascript search methods  -->
+    <!-- string indexOf(),String lastIndexOf(), string startsWith(),String endsWith() -->
+
+    <!-- create a Date object and alert the current date and time -->
+    <!-- <script type="text/javascript">
+        const d = newDate();
+        fruits.splice()
+    </script> -->
+    <!-- JS STRING METHODS -->
+    <script type="text/javascript">
+        let v1 = "Banana Orange, Apple,Kiwi";
+        part1 = v1.slice(12, 8);
+        console.log(part1);
+    </script>
+    <!-- js string methods -->
+    <!-- 12 position bata 8 word  -->
+    <script type="text/javascript">
+        let v2 = "Banana Orange, Apple,Kiwi";
+        part1 = v1.substr(12, 8);
+        console.log(part1);
+    </script>
+    <!-- if the first parameter is negative, the poosition counts from the end of the string -->
+    <script type="text/javascript">
+        let v3 = "Banana Orange, Apple,Kiwi";
+        part1 = v3.slice(12, 8);
+        console.log(part1);
+    </script>
+    <!-- JS Number -->
+    <script type="text/javascript">
+        v4 = (0.2 * 10 + 0.1 * 10) / 10;
+        console.log(part1);
+    </script>
+    <!-- number -->
+    <script type="text/javascript">
+        let v4 = 2;
+        while (v4 != Infinity) {
+            v4 = v4 * v4;
+        }
+        console.log(part1);
+    </script>
+    <!-- arrays -->
+    <script type="text/javascript">
+        const person = { firstName: "john", lastName: "hari" }
+
+        console.log(person.firstName);
+    </script>
+
+    <!-- Accessing the first array elements -->
+    <script type="text/javascript">
+        const p1 = ["john", "ram", "hari"];
+        let p2 = p1[0];
+        console.log(p2);
+    </script>
+    <!-- Accessing the last element of the array -->
+    <script type="text/javascript">
+        const p3 = ["banana", "apple", "orange", "mango"];
+        let p4 = p3[p3.length - 1];
+        console.log(p4);
+    </script>
+    <!-- Lopping array elelments -->
+    <script type="text/javascript">
+        let f1 = "string"
+        console.log(f1.length);
+        for (i = 0; i < f1; i++) {
+            f1 += "<li>" + f1[i] + "</li>";
+        }
+        f1 += "</ul>";
+        function myFunction(value) {
+            f1 += "<li>" + value + "</li>";
+        }
+    </script>
+    <!-- adding array element -->
+
+    <script type="text/javascript">
+        const a1 = ["john", "hari"]
+        a2 = a1.push("lemon")
+        a2[a2.length] = "mango";
+        console.log(a2);
+    </script>
+    <!-- numbered index -->
+    <script type="text/javascript">
+        const a4 = []
+        a4[0] = "john";
+        a4[1] = "Doe",
+            a4[2] = 46;
+        a5 = a4.length;
+        console.log(a5);
+    </script>
+    <!-- typeof -->
+    <script type="text/javascript">
+        const f3 = ["banana", "apple", "orange"];
+        type = typeof f3;
+        console.log(type);
+    </script>
+    <!-- push() -->
+    <script type="text/javascript">
+        const f6 = ["banana", "apple", "orange"];
+        type1 = f6.push("orange");
+        console.log(type1);
+    </script>
+    <!-- javascript array shift -->
+    <script type="text/javascript">
+        const f7 = ["banana", "apple", "orange"];
+        type2 = f7.shift("orange");
+        console.log(type2);
+    </script>
+    <!-- concat array -->
+    <script type="text/javascript">
+        const f8 = ["banana", "apple", "orange"];
+        const f9 = ["email", "sharu"];
+        const merger = f8.concat(f9);
+        console.log(merger);
+    </script>
+    <!-- splicing and slicing arrays -->
+    <!-- splic() method and slice() slices out a piece of an array -->
+    <!-- splice() method can be used to add new items to an array. -->
+    <script type="text/javascript">
+        const f0 = ["banana", "apple", "orange"];
+        type3 = f0.splice(2, 9, "lemon", "kiwi");
+        type4 = f0.splice(0, 1);
+        console.log(type4);
+        console.log(type3);
+    </script>
+    <!-- sort -->
+    <script type="text/javascript">
+        const s1 = ["banana", "apple", "orange"];
+        t1 = s1.sort();
+        console.log(t1);
+    </script>
+    <!-- reverse -->
+    <script type="text/javascript">
+        const s2 = ["banana", "apple", "orange"];
+        type3 = s2.reverse();
+        console.log(type3);
+    </script>
+    <!-- compare -->
+    <script type="text/javascript">
+        const s3 = [20, 30, 3, 40, 40, 5, 7, 9, 8];
+        s3.sort(function (a, b) {
+            r1 = a - b
+            console.log(r1);
+        });
+    </script>
+    <!-- array sort -->
+    <script type="text/javascript">
+        const s7 = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+        for (let i = s7.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * i)
+            let k = s7[i];
+            s7[i] = s7[j]
+            s7[j] = k
+        }
+
+        console.log(k);
+    </script>
+    <!-- javascript array foreach -->
+
+
+    <!-- array iteration  -->
+    <script type="text/javascript">
+        const nio = [1, 2, 3, 5, 6, 7, 8, 9, 56, 78];
+        const nio3 = nio.map(myFunction);
+
+        function myFunction(value) {
+            re = value * 2;
+            console.log(re);
+        }
+
+
+    </script>
+    <!-- javascript filter -->
+    <script type="text/javascript">
+        const nn1 = [1, 2, 3, 5, 6, 7, 8, 9, 56, 78];
+        const over18 = nn1.filter(myFunction);
+        function myFunction(value, index, array) {
+            res = value > 18;
+            console.log(res);
+        }
+    </script>
+    <!-- number -->
+    <script type="text/javascript">
+        let time = 6
+        if (time < 10) {
+            greeting = "good morning!";
+
+        } else if (time < 20) {
+            greeting = "good day";
+
+        } else {
+            greeting = "Good Evening!";
+        }
+        console.log(greeting);
+    </script>
+    <!-- javascript switch-->
+    <script type="text/javascript">
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wedensday"
+                break;
+
+
+        }
+        console.log(day)
+    </script>
+
+    <script type="text/javascript">
+        text = "god here ";
+        switch (new Date().getDay()) {
+            case 6:
+                text = "today is monday";
+                break;
+            case 7:
+                text = "god bless us";
+                break;
+
+        }
+        console.log(text);
+        // new date
+    </script>
+    <script type="text/javascript">
+        const p8 = [{ fname: "jj", lname: "doe", age: "44" }]
+        let text = "";
+        for (let x in text) {
+            text += p8[x];
+        }
+        console.log(p8);
+    </script>
+
+    <script type="text/javascript">
+        const p9 = [1, 2, 4, 5, 6, 7, 8, 9];
+        let tt = "";
+        for (let x in p9) {
+            tt += p9[tt];
+
+        }
+        console.log(tt);
+
+    </script>
+
+    <script type="text/javascript">
+        const p01 = [1, 2, 4, 5, 6, 7, 8, 9];
+        let pp = "";
+        for (let x in p9) {
+            tt += p9[tt];
+
+        }
+        console.log(tt);
+
+    </script>
+
+    <script type="text/javascript">
+        const pop = [1, 2, 4, 5, 6, 7, 8, 9];
+        let pop1 = "";
+        for (let x in p9) {
+            tt += p9[tt];
+
+        }
+        console.log(tt);
+
+    </script>
+    <script type="text/javascript">
+        txt = 'hello '
+        const porus = {
+            fname: "john",
+            lname: "doe",
+            age: 25,
+        };
+        for (let x in porus) {
+            txt = txt + porus[x];
+        }
+    </script>
+    <!-- javascript map function -->
+    <script type="text/javascript">
+        const h1 = new Map([
+            ["apple", 500],
+            ["banana", 500],
+            ["orange", 300]
+        ]);
+        d1 = h1.set("sam", 100);
+        console.log(d1);
+        console.log(h1);
+
+    </script>
+    <!-- get method -->
+    <script type="text/javascript">
+        const h2 = new Map([
+            ["apple", 500],
+            ["banana", 500],
+            ["orange", 300]
+        ]);
+        d1 = h2.set("sam", 100);
+        d2 = h2.get("orange");
+        d3 = h2.has("orange")
+        d5 = h2.delete("apple")
+        console.log(d5)
+        // has method return true if key exist
+        console.log(d3)
+        console.log(d2);
+        console.log(d1);
+        console.log(h1);
+
+    </script>
+    <!-- list all entries -->
+
+    <script type="text/javascript">
+        let ram = "";
+        ram.foreach(function (value, key) {
+            ram += key + '=' + value;
+        })
+
+    </script>
+    <!-- js arrow function -->
+    <script type="text/javascript">
+        hello = () => {
+            return "hello";
+        }
+
+    </script>
+    <!-- regular function -->
+    <script type="text/javascript">
+
+    </script>
+    <!-- arrow function  -->
+    <script type="text/javascript">
+        hello = () => {
+            document.getElementById("demo").innerHTML += this;
+        }
+        // window object calls the function
+        window.addEventListener("load", hello);
+
+        // button object calls the function
+        document.getElementById("btn").addEventListener("click", hello);
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

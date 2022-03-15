@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>
+        program to check prime number or not
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function detect_data_type(value) {
+            let datatype = [Function, RegExp, Number, String, Boolean, Object], x, len;
+            if (typeof value == "object" || typeof value == "function") {
+                for (x = 0, len = datatype.length; x < len; x++) {
+                    if (value instanceof datatype[x]) {
+                        return datatype[x];
+                    }
+                }
+            }
+            return typeof value;
+        }
+
+        console.log(detect_data_type(12));
+
+
+
+    </script>
+    <!-- factor of positive number -->
+    <script type="text/javascript">
+
+        const num = prompt('enter a positive number');
+        console.log(`the factor of ${num}:`)
+        // looping through 1 to n
+        for (let i = 1; i <= num; i++) {
+            if (num % i === 0) {
+                console.log(i);
+            }
+        }
+
+
+    </script>
+    <!-- 3.finonacci series up to n -->
+    <script type="text/javascript">
+        const num1 = prompt("enter a number");
+        let n1 = 0, n2 = 1, nextTerm;
+        console.log(n1);
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+
+
+    </script>
+
+</body>
+
+</html>

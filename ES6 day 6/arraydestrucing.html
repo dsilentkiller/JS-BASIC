@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Array Destructuring in javascript </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const myProgLang = ['js', 'php', 'c', 'python', 'java'];
+        let [top1, top2, top3, top4, top5] = myProgLang;
+        console.log(myProgLang.length);
+
+        console.log(`my favorite prograaming language is ${top1} and my least fav is ${top5}`);
+        // Program to swap two number without 3 rd variables
+        let a = 10;
+        let b = 6;
+        [a, b] = [b, a]
+        console.log(`the value of a is ${a} and b is ${b}`)
+        // vehicle const array is defined.
+        // const vehicles =['mustang','surkhet','kathmandu','pokhara'];
+        // destructuring array
+        const vehicles = [mustang, surkhet, kathmandu, pokhara];
+
+        // calculate function
+
+        function calculate(a, b) {
+            const add = a + b;
+            const substract = a - b;
+            const multiply = a * b;
+            const divide = a / b;
+            return [add, substract, multiply, divide];
+        }
+        const [add, substract, multiply, divide] = calculate(2, 3);
+        // ternary operator
+        authenticated ? renderApp() : renderLogin();
+        // checkSign
+        checkSign ? positive : Negative;
+
+        // Color array destructureing 
+
+        let Colors = ['red', 'black', 'green', 'blue'];
+        let [firstColor, secondColor, thirdColor, fourthColor] = Colors;
+        console.log(firstColor);
+    </script>
+</body>
+
+</html>
