@@ -1,0 +1,17 @@
+.Container{
+    padding: 20px;
+    margin: 100px;
+    border: 1px 1px 1px 1px;
+    height: auto;
+    width: fit-content;
+    background-color: rgb(192, 170, 175);
+    color: aqua;
+  
+}
+.row{
+
+}
+.column-1{
+    height: auto;
+    display: flex;
+}
